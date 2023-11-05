@@ -1,65 +1,138 @@
-# Phase 1 Project
+<span style="color: black; font-size: 24px;">**The movie production industry has spooked Microsoft's curiosity**</span>  
 
-You've made it all the way through the first phase of this course - take a minute to celebrate your awesomeness!
+Well..., let's give them some insights of the industry..  
 
-![awesome](https://raw.githubusercontent.com/learn-co-curriculum/dsc-phase-1-project/master/awesome.gif)
 
-Now you will put your new skills to use with a large end-of-Phase project! This project should take 20 to 30 hours to complete.
 
-## Project Overview
+<span style="color: black; font-size:20px;">**Business Case**</span>  
 
-For this project, you will use exploratory data analysis to generate insights for a business stakeholder.
+Microsoft is interested in venturing in the movie production business but they do not have business analysis to help them make informed decisions as to which movies to produce.  
 
-### Business Problem
 
-Microsoft sees all the big companies creating original video content and they want to get in on the fun. They have decided to create a new movie studio, but they don’t know anything about creating movies. You are charged with exploring what types of films are currently doing the best at the box office. You must then translate those findings into actionable insights that the head of Microsoft's new movie studio can use to help decide what type of films to create.
+<span style="color: black; font-size:20px;">**Data Source**</span> 
 
-### The Data
+We have data from imdb and is contained in three files:  
+  imdb.title.basics - contains data about the movies names and genres  
+  imdb.title.ratings - contains data about the movie ratings  
+  bom.movie_gross - contains data about the gross revenues associated with the movies.  
+  
+<span style="color: black; font-size:20px;">**Analytical Questions**</span> 
 
-In the folder `zippedData` are movie datasets from:
+1. Which is the most produced genre in the industry?
+2. Which is the genre with the highest and least gross revenue?
+3. Which is the genre with the least gross revenue?
+4. How is the revenue performance for the top produced genres?
+5. How is the revenue performance trend for the top revenue generaters over the years?
+6. How is the relationship between rating and gross revenue?  
 
-* [Box Office Mojo](https://www.boxofficemojo.com/)
-* [IMDB](https://www.imdb.com/)
-* [Rotten Tomatoes](https://www.rottentomatoes.com/)
-* [TheMovieDB](https://www.themoviedb.org/)
-* [The Numbers](https://www.the-numbers.com/)
+<span style="color: black; font-size:20px;">**Methodology**</span> 
 
-It is up to you to decide what data from this to use and how to use it. If you want to make this more challenging, you can scrape websites or make API calls to get additional data. If you are feeling overwhelmed or behind (e.g. struggled with the Phase 1 Code Challenge), we recommend you use only the following data files:
+We use descriptive statistics, trends and use visualizations to analyse our data and draw conclusions.  
 
-* imdb.title.basics
-* imdb.title.ratings
-* bom.movie_gross
 
-## Deliverables
+<span style="color: black; font-size:20px;">**Results**</span> 
 
-There are three deliverables for this project:
+<span style="color: black; font-size:16px;">**Which is the most produced genre in the industry?**</span> 
 
-* A **GitHub repository**
-* A **Jupyter Notebook**
-* A **non-technical presentation**
+![image-2.png](attachment:image-2.png)  
 
-Review the "Project Submission & Review" page in the "Milestones Instructions" topic for instructions on creating and submitting your deliverables. Refer to the rubric associated with this assignment for specifications describing high-quality deliverables.
+<span style="color: black; font-size:16px;">**Most produced genre**</span> 
 
-### Key Points
+The top 3 produced genres are:-
+* Drama  
+* Documentary  
+* Comedy,Drama,Romance  
 
-* **Your analysis should yield three concrete business recommendations.** The ultimate purpose of exploratory analysis is not just to learn about the data, but to help an organization perform better. Explicitly relate your findings to business needs by recommending actions that you think the business (Microsoft) should take.
+It is important to look at how these genres rank in relation to gross revenue.  
 
-* **Communicating about your work well is extremely important.** Your ability to provide value to an organization - or to land a job there - is directly reliant on your ability to communicate with them about what you have done and why it is valuable. Create a storyline your audience (the head of Microsoft's new movie studio) can follow by walking them through the steps of your process, highlighting the most important points and skipping over the rest.
+* Drama - 4th   
+* Documentary - 6th   
+* Comedy,Drama,Romance - 11th   
 
-* **Use plenty of visualizations.** Visualizations are invaluable for exploring your data and making your findings accessible to a non-technical audience. Spotlight visuals in your presentation, but only ones that relate directly to your recommendations. Simple visuals are usually best (e.g. bar charts and line graphs), and don't forget to format them well (e.g. labels, titles).
+Rank in relation to average rating  
 
-## Getting Started
+* Drama - 17th   
+* Documentary - 16th   
+* Comedy,Drama,Romance - 14th  
 
-Please start by reviewing this assignment, the rubric at the bottom of it, and the "Project Submission & Review" page. If you have any questions, please ask your instructor ASAP.
+Given the foregoing ranking, it is not clear why these genres are the most produced.  
 
-Next, we recommend you check out [the Phase 1 Project Templates and Examples repo](https://github.com/learn-co-curriculum/dsc-project-template) and use the MVP template for your project.
+<span style="color: black; font-size:16px;">**Which is the genre with the highest and least gross revenue?**</span>  
 
-Alternatively, you can fork [the Phase 1 Project Repository](https://github.com/learn-co-curriculum/dsc-phase-1-project), clone it locally, and work in the `student.ipynb` file. Make sure to also add and commit a PDF of your presentation to your repository with a file name of `presentation.pdf`.
+![image.png](attachment:image.png)  
 
-## Project Submission and Review
+<span style="color: black; font-size:16px;">**Top Revenue Generaters**</span> 
 
-Review the "Project Submission & Review" page in the "Milestones Instructions" topic to learn how to submit your project and how it will be reviewed. Your project must pass review for you to progress to the next Phase.
+The top 3 revenue generating genres are:-
+* Action,Adventure,Sci-Fi  
+* Adventure,Animation,Comedy  
+* Action,Adventure,Fantasy  
 
-## Summary
+How do they rank in relation to average rating?  
 
-This project will give you a valuable opportunity to develop your data science skills using real-world data. The end-of-phase projects are a critical part of the program because they give you a chance to bring together all the skills you've learned, apply them to realistic projects for a business stakeholder, practice communication skills, and get feedback to help you improve. You've got this!
+* Action,Adventure,Sci-Fi  - 5th 
+* Adventure,Animation,Comedy  - 2nd
+* Action,Adventure,Fantasy  - 4th  
+
+How about rank in relation to production frequency?  
+
+* Action,Adventure,Sci-Fi  - 10th 
+* Adventure,Animation,Comedy  - 7th
+* Action,Adventure,Fantasy  - 25th  
+
+The top revenue generating movies are highly rated by viewers and are in the top 5 ranking by viewrs. 
+
+<span style="color: black; font-size:16px;">**Bottom 3 Revenue Generating Genres**</span>
+* Drama,War,Western  
+* Documentary,History,Thriller  
+* Action,Horror  
+
+<span style="color: black; font-size:16px;">**How is the revenue performance for the top produced genres?**</span>  
+
+![image-2.png](attachment:image-2.png)  
+
+* Drama - Ranked 4th in the revenue generating table   
+* Documentary - Ranked 6th in the revenue generating table   
+* Comedy,Drama,Romance - Ranked 11th in the revenue generating table 
+
+Although they're not in the top three ranking, they still rank in the top ten except Comedy,Drama,Romance. 
+
+<span style="color: black; font-size:16px;">**How is the revenue performance trend for the top revenue generaters over the years?**</span>  
+
+![image-4.png](attachment:image-4.png)  
+
+We see a sawtooth pattern year on year for all the top 5 genres. Between 2010 and 2016, Action,Adventure,Sci-Fi and Adventure,Animation,Comedy have dominated the rest of the top 5 year on year. 
+From 2016 moving to 2018 the counters closed on a downward trend except Drama which had a slight upward trend. Notably,Action,Adventure had a huge upward surge to close the highest among the top 5.  
+
+<span style="color: black; font-size:16px;">**How is the relationship between rating and gross revenue?**</span> 
+
+![image-3.png](attachment:image-3.png)  
+
+There seems to be a dense population above the mean of 6.458543. Interestingly, the revenues around this dense polulation is not big as we would expect. However, it is also certain that the top revenue generaters are also distributed around the mean.  
+
+
+<span style="color: black; font-size:20px;">**Conclusions**</span>  
+
+The top 3 produced genres have no relationship with the rating.  
+Although the're not the top ranked in revenue generation, they still rank in the top 11.  
+
+The top 3 ranked genres in revenue generation have high ratings but not highly rated in terms of production frequency. 
+
+<span style="color: black; font-size:20px;">**Recomendations**</span> 
+
+Produce movies ranked highly in gross revenue ranking.  
+Do not produce the most prduced genre in the industry as it does not correlate with gross revenue.
+When deciding to produce movies based on rating, make sure to choose highly rated movies which are highly ranked in the gross revenue ranking.  
+
+<span style="color: black; font-size:20px;">**Further Reviews**</span> 
+
+Additional data is required inorder to analyse the profit generated by these movies.
+
+During data clean-up after the merging process, we lost a lot of data due to null values occassioned by missing data. I would be important to get data with minimal missing data so as to have a larger sample to carry out our analysis.  
+
+Perform further analysis on how the number of voters correlate with the average rating.
+
+
+```python
+
+```
